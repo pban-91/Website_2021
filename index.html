@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Flask App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel='stylesheet' href="{{ url_for('static', filename='css/main.css')}}">
+		<script src="https://kit.fontawesome.com/b3d8f627c4.js" crossorigin="anonymous"></script>
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css')}}"/></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Pauric Bannigan</h1>
+						<p>Research Associate &nbsp;&bull;&nbsp; Allen Lab &nbsp;&bull;&nbsp; University of Toronto</p>
+						<nav>
+							<ul>
+								<li><a href="https://allen.pharmacy.utoronto.ca" class="fas fa-vial"><span class="label">AllenLab</span></a></li>
+								<li><a href="https://scholar.google.ca/citations?user=_ik1GJcAAAAJ&hl=en&oi=ao" class="icon solid fa-graduation-cap"><span class="label">Google Scholar</span></a></li>
+								<li><a href="https://www.linkedin.com/in/pauric-bannigan-93600362/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:pauric.bannigan@utoronto.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/PBannigan" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/pban-91" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div><p><img src="static/css/images/AllenLabLogo.png" style="width: 10%" alt=""/></p></div>
+						<div class="inner">&copy; 2021 Pauric Bannigan</div>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
